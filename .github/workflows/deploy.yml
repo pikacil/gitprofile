@@ -54,7 +54,7 @@ jobs:
           # port: 22
           script: |
             # Pindah ke direktori aplikasi di server
-            cd /home/husern/tes1
+            cd /home/husen/tes1
 
             # Mengunduh image terbaru yang baru saja kita push
             docker-compose pull
