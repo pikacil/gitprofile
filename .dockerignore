@@ -1,0 +1,8 @@
+# Abaikan node_modules dan file lokal
+node_modules
+npm-debug.log
+build
+.dockerignore
+Dockerfile
+.git
+.gitignore
