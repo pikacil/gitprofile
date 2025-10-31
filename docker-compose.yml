@@ -1,8 +1,13 @@
 version: '3.8'
+
 services:
   react-app:
-    build: .
-    container_name: react-app
+    # PENTING: Ganti dengan nama image Anda di Docker Hub
+    # Format: <username-docker-hub>/<nama-image>:latest
+    image: pikacil/tes1:latest
+    container_name: my-react-app-prod
     ports:
-      - "5052:5052"
+      # Map port 80 di server ke port 80 di container
+      - "7052:80"
+      # Jika psort 80 sudah dipakai, ganti. Cth: "3000:80"
     restart: always

@@ -34,7 +34,7 @@ jobs:
           file: ./Dockerfile
           push: true
           # Tag image sebagai 'latest'
-          tags: root/tes1:latest
+          tags: pikacil/tes1:latest
 
   deploy:
     # Pekerjaan ini bergantung pada 'build-and-push'
