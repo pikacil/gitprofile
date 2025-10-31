@@ -24,7 +24,7 @@ FROM nginx:1.25-alpine
 
 # Salin hasil build (dari folder /app/build di tahap 'build')
 # ke folder default Nginx
-COPY --from=build /app/build /usr/share/nginx/html
+COPY --from=build /app/dist /usr/share/nginx/html
 
 # (Opsional) Salin konfigurasi Nginx kustom jika Anda punya
 # COPY nginx.conf /etc/nginx/conf.d/default.conf
