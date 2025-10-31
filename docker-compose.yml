@@ -1,18 +1,8 @@
-version: '3'
+version: '3.8'
 services:
-  app:
-    build:
-      context: .
-      dockerfile: ./node_modules/vail/runtimes/npm/Dockerfile
-      args:
-        VAIL_NODE_VERSION: 20
-    command: npm run dev -- --host 0.0.0.0
+  react-app:
+    build: .
+    container_name: react-app
     ports:
-      - '5173:5173'
-    volumes:
-      - .:/var/www/html
-    networks:
-      - vail
-networks:
-  vail:
-    driver: bridge
+      - "5052:5052"
+    restart: always
